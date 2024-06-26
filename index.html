@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles.css" type="text/css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:Regular,wght@0,400;0&display=swap" rel="stylesheet">
-  <title>Formuário Intermediário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> <title>Formulário Intermediário</title>
 </head>
 <body>
   <div class="page">
@@ -15,18 +16,19 @@
       <p>Preencha o formulário abaixo para </br>  agendar a sua mentoria</p>
     </header>
   
-    <main class="wrapper">
+   <main class="wrapper">
+    <form action="#">
     <fieldset>
       <legend>Informações pessoais </legend>
       <div class="col-2">
         <div class="input-wrapper">
           <label>Nome</label>    
-          <input type="text">
+          <input type="text" class="nome">
         </div>
   
         <div class="input-wrapper">
           <label>Sobrenome</label>
-          <input type="text">
+          <input type="text" class="sobrenome">
         </div>
       </div>
 
@@ -34,25 +36,27 @@
         <label>Email</label>
         <input type="email">
       </div>
+
       <div class="input-wrapper">
         <label>Senha</label>
         <input type="password">
       </div>
 
     </fieldset>
-    <div class="mentor-info">
-      <h2>Informações do Mentor</h2>
-    <form>
-      <div class="input-wrapper">
-        <label>Nome do seu mentor</label>
-        <input type="text">
-      </div>
-    </div>
-    <div class="personal-info">
-      <h2>Seus horários disponíveis</h2>
-    <form>
+
+    <fieldset>
+      <legend>Informações do Mentor </legend>
+        <div class="input-wrapper">
+          <label>Nome do seu mentor</label>    
+          <input type="text">
+        </div>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Seus horários disponíveis </legend>
+
       <h3>Primeira mentoria</h3>
-        <div class="col-3">
+      <div class="col-3">
         <div class="input-wrapper">
           <label>Data</label>    
           <input type="text">
@@ -74,21 +78,24 @@
           <input type="text">
         </div>
   
-        <div class="input-wrapper">
+      <div class="input-wrapper">
           <label>Das</label>
           <input type="text">
-        </div>
-        <div class="input-wrapper">
+      </div>
+
+      <div class="input-wrapper">
           <label>até</label>
           <input type="text">
-        </div>
       </div>
-    </div>
+    </form>
+    </fieldset>
+
+    </main>
     <footer>
       <button>Salvar</button>
     </footer>
-    </form>
-    </main>
+
+    
   </div>
 </body>
 </html>
